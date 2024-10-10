@@ -1,0 +1,26 @@
+.video_center{
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+.text_video{
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    font-family: 'Merriweather Sans', sans-serif;
+    justify-content: center;
+}
+.video_animation{
+    width: 65%;
+}
+@media (max-width: 880px) { 
+
+    .video_animation{
+        width: 90%;
+    }
+ }    
