@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>3D Viewer</title>
+		<link rel="icon" type="image/x-icon" href="images/lego.png">
+        <link rel="stylesheet" href="css/style_3d_view.css" />
+		<style>
+			body { margin: 0; }
+		</style>
+	  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+		 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		
+		 <script type="importmap">
+			{
+			  "imports": {
+				"three": "https://unpkg.com/three@v0.159.0/build/three.module.js",
+				"three/addons/": "https://unpkg.com/three@v0.159.0/examples/jsm/"
+			  }
+			}
+		  </script> 
+
+		  <!--In cazul in care nu se foloseste un build al aplicatiei:
+				-versiunea librariei three.js trebuie actualizata cu ultima aparuta https://www.npmjs.com/package/three?activeTab=versions
+				-daca sursa librariei este data jos de pe internet, scriptul nu o sa ruleze-->
+
+	</head>
+	<body>
+        <!--<header>
+            <h1>3D VIEWER</h1>
+          </header>-->
+        <main>
+            <div id="container3D"></div>
+          </main>
+		  
+		  <input type="checkbox" id="active">
+		  <label for="active" class="menu-btn"><span></span></label>
+		  <label for="active" class="close"></label>
+	 <div class="wrapper">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="3d_piese.html">Pieces</a></li>
+				<li><a href="3d_asamblare.html">Assemble</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="3d_view.html">Reload</a></li>
+	  		</ul>
+	  </div>
+
+		 
+		<script type="module" src="js/3d_view_script.js"></script>
+	</body>
+</html>

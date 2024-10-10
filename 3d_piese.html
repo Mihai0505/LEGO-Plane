@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Pieces</title>
+  <link rel="icon" type="image/x-icon" href="images/lego.png">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- font awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <link href="css/style_3d_piese.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                <img style="width: 60px;" src="images/lego.png">&nbsp;&nbsp;Product View
+              </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="3d_piese.html">Pieces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="3d_asamblare.html">Assemble</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="3d_view.html">3D Viewer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+    <!-- meniu de cautare -->
+<div class="section_search">
+
+  <div class="hero">
+    <header id="masthead" role="banner">
+      <div class="container3">
+        <button class="hamburger hamburger--boring" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+          <span class="hamburger-label">Categories</span>
+        </button>
+      <form id="masthead-search" autocomplete="off">
+      <input type="search" name="s" id="cautare" aria-labelledby="search-label" autocomplete="off" placeholder="Search&hellip;" class="draw">
+        <button type="button" onclick="schimbare(document.getElementById('cautare').value);" class="button_submit"><i class="fa fa-search"></i></button>
+        </form>        
+        <nav id="site-nav" role="navigation">
+          <div class="col">
+            <button type="button" class="buton_meniu"  id="defaultOpen" onclick="schimbare('all');" >All</button>
+            <ul>
+              <li><a style="color: red;" href="pieces/ansamblul_final.blend" download="">Click here to</a></li>
+              <li><a style="color: red;" href="pieces/ansamblul_final.blend" download="">Download the model</a></li>
+            </ul>        
+          </div>
+          <div class="col">
+            <button type="button" class="buton_meniu" onclick="schimbare('fuzelaj');">Fuselage</button>
+            <ul>
+              <li><a href="#">Side Panels</a></li>
+              <li><a href="#">Cockpit</a></li>
+            </ul> 
+          </div>
+          <div class="col">
+            <button type="button" class="buton_meniu" onclick="schimbare('aripi');">Wings</button>
+            <ul>
+              <li><a href="#">Winglet</a></li>
+              <li><a href="#">Lights</a></li>
+            </ul> 
+          </div>
+          <div class="col">
+            <button type="button" class="buton_meniu" onclick="schimbare('ampenaje');">Tailplane</button>
+            <ul>
+              <li><a href="#">Horizontal stabilizer</a></li>
+              <li><a href="#">Vertical stabilizer</a></li>
+            </ul>             
+          </div>
+          <div class="col">
+            <button type="button" class="buton_meniu" onclick="schimbare('trenDeAterizare');">Landing gear</button>
+            <ul>
+              <li><a href="#">Wheels</a></li>
+              <li><a href="#">Suspension</a></li>
+            </ul>               
+          </div>
+          <div class="col">
+            <button type="button" class="buton_meniu" onclick="schimbare('motoare');">Engine</button>
+            <ul>
+              <li><a href="#">Fan</a></li>
+              <li><a href="#">Nozzle</a></li>
+            </ul>               
+          </div>
+      </nav>
+    </div>
+  </header>
+</div>
+
+</div>
+
+
+  <!-- meniu de cautare -->
+
+
+
+
+  
+    <!-- elemente -->
+
+
+
+  <div class="flex-container" id="item-list-all"></div> 
+
+
+  <!-- end elemente -->
+
+
+
+  <!-- info section -->
+
+  <!-- end info_section -->
+
+<!-- footer section -->
+
+
+<footer class="footer-distributed">
+  
+  <div class="footer-left">
+
+    <a class="navbar-brand" href="index.html">
+      <span>
+        <img style="width: 60px;" src="images/lego.png">&nbsp;&nbsp;Product View
+      </span>
+    </a>
+
+    <p class="footer-links">
+      <a href="index.html" class="link-1">Home</a>
+
+      <a href="3d_piese.html">Pieces</a>
+    
+      <a href="3d_asamblare.html">Assemble</a>
+    
+      <a href="3d_view.html">3D Viewer</a>
+      
+      <a href="contact.html">Contact</a>
+      
+    </p>
+
+    <p class="footer-company-name">
+    </p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker i_dimension"></i>
+      <p class="p_dimension">Bucharest, Romania</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone i_dimension"></i>
+      <p class="p_dimension">+40 732 568 234</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope i_dimension"></i>
+      <p class="p_dimension">productviewv001@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About the construction of the application</span>
+      This application is created with the purpose of presenting a 3d assembly with the purpose of selling it on the market to commercial suppliers
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/?lang=ro"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<footer class="footer_section">
+  <div class="container">
+    <p>
+      &copy; <span id="displayDateYear"></span> All Rights Reserved
+    </p>
+  </div>
+</footer>
+<!-- footer section -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="js/custom.js"></script>
+  <script src="js/piese.js"></script>
+
+
+
+</body>
+
+</html>
